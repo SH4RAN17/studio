@@ -79,7 +79,7 @@ export default function ResumePage() {
                 <div className="divide-y divide-white/10 border-t border-white/10">
                   {tools.map((tool, i) => (
                     <div key={i} className="py-6 flex justify-between items-center group hover:bg-white/[0.02] transition-all px-2">
-                      <span className="text-xl md:text-2xl font-medium tracking-tight group-hover:text-primary transition-colors">{tool.name}</span>
+                      <span className="text-2xl font-medium group-hover:text-primary transition-colors">{tool.name}</span>
                       <span className="text-sm uppercase tracking-widest text-secondary group-hover:text-foreground transition-colors">{tool.level}</span>
                     </div>
                   ))}
