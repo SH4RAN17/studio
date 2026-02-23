@@ -11,7 +11,7 @@ export function About() {
         <div className="lg:col-span-7 flex flex-col justify-end">
           <div className="max-w-xl ml-auto">
             <p className="text-xl md:text-2xl text-foreground leading-relaxed mb-8">
-              Based in the intersection of digital precision and tactile reality, I specialize in architectural visualization and conceptual design that speaks through silence.
+              I am a passionate and detail-oriented 3D artist currently pursuing a degree in Animation and VFX, with a strong emphasis on architectural visualization. I specialize in realistic interior and exterior 3D rendering using industry-standard software such as Autodesk 3ds Max and Corona Renderer.
             </p>
             <p className="text-lg text-secondary leading-relaxed">
               My work explores the dialogue between light, shadow, and materiality. Every project is a journey into the essence of space, seeking to evoke emotion through restrained elegance and brutalist honesty. With a background in both traditional architecture and advanced 3D rendering, I bridge the gap between imagination and built environments.
