@@ -24,8 +24,8 @@ export const projectsData: Project[] = [
     id: "2",
     title: "A Warm Everyday Kitchen",
     category: "Interior",
-    year: "2024",
-    description: "Shadow Play explores the transient nature of light within a residential setting. Through carefully calculated slatted screens and clerestory windows, the interior becomes a canvas for the sun's daily trajectory.",
+    year: "2026",
+    description: "This interior visualization shows a modern kitchen that aims to embody the ambiance of a peaceful living space. The idea is to create a warm, simple, and realistic space that uses natural elements and soft lighting to create a cozy environment. The design includes light-colored wood cabinets and a dark marble backsplash and countertop, creating a good contrast between the warm and dark colors. The design also includes small details such as textured glass panels on the cabinets, metal handles, and kitchen props to create a realistic space. A dining area is also included in the foreground to create a sense of scale.",
     mainImageId: "project-2",
     services: ["Interior Rendering", "Lighting Design"],
     galleryImageIds: ["project-2", "project-2_1", "project-2_2"]
