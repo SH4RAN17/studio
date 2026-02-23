@@ -15,7 +15,7 @@ export default function ResumePage() {
     {
       title: "Education",
       items: [
-        { role: "B.Sc. Animation & VFX", company: "NID Ahmedabad", period: "2012 — 2016", desc: "Interdisciplinary design studies with a minor in digital media." },
+        { role: "B.Sc. Animation & VFX", company: "Thakur College of Science & Commerce (Kandivali E)", period: "2025 - 2028", desc: "Interdisciplinary design studies with a minor in digital media." },
       ]
     },
     {
