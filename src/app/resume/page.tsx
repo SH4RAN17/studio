@@ -2,6 +2,7 @@
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Separator } from "@/components/ui/separator"
+import Link from "next/link"
 
 export default function ResumePage() {
   const sections = [
