@@ -4,7 +4,7 @@ import { Footer } from "@/components/footer"
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowLeft } from "lucide-react"
-import { projectsData, Project } from "@/lib/projects-data"
+import { Project } from "@/lib/projects-data"
 import { PlaceHolderImages } from "@/lib/placeholder-images"
 
 export function ProjectDetail({ project }: { project: Project }) {
@@ -60,22 +60,17 @@ export function ProjectDetail({ project }: { project: Project }) {
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {galleryImages.slice(0, 2).map((img, i) => (
+              {galleryImages.map((img, i) => (
                 <div key={i} className="relative aspect-[4/5] bg-card overflow-hidden">
-                  <Image src={img} alt={`${project.title} detail ${i}`} fill className="object-cover transition-slow" data-ai-hint="architecture detail" />
-                </div>
-              ))}
-              {galleryImages[2] && (
-                <div className="md:col-span-2 relative aspect-video bg-card overflow-hidden">
                   <Image 
-                    src={galleryImages[2]} 
-                    alt={`${project.title} wide`} 
+                    src={img} 
+                    alt={`${project.title} detail ${i}`} 
                     fill 
-                    className="object-contain transition-slow" 
-                    data-ai-hint="architecture wide" 
+                    className="object-cover transition-slow" 
+                    data-ai-hint="architecture detail" 
                   />
                 </div>
-              )}
+              ))}
             </div>
           </div>
         </div>
