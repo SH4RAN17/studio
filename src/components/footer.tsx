@@ -12,11 +12,11 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-16 w-full mb-24">
           <div className="text-center md:text-left">
             <p className="text-secondary text-xs uppercase tracking-widest mb-4">Email</p>
-            <a href="mailto:hello@sharanbelel.com" className="text-xl hover:text-primary transition-colors">hello@sharanbelel.com</a>
+            <a href="mailto:belelsharan17@gmail.com" className="text-xl hover:text-primary transition-colors">belelsharan17@gmail.com</a>
           </div>
           <div className="text-center">
             <p className="text-secondary text-xs uppercase tracking-widest mb-4">Location</p>
-            <p className="text-xl">Mumbai / International</p>
+            <p className="text-xl">Mumbai</p>
           </div>
           <div className="text-center md:text-right">
             <p className="text-secondary text-xs uppercase tracking-widest mb-4">Social</p>
