@@ -9,7 +9,6 @@ export default function ResumePage() {
       title: "Experience",
       items: [
         { role: "Senior Architectural Visualizer", company: "Atelier Grey", period: "2021 — Present", desc: "Leading the visualization team for high-end residential projects across Europe." },
-        { role: "Conceptual Designer", company: "Studio Mono", period: "2018 — 2021", desc: "Developed architectural concepts and digital twins for urban planning competitions." },
       ]
     },
     {
@@ -37,7 +36,6 @@ export default function ResumePage() {
       
       <section className="pt-48 pb-32 px-8 md:px-16">
         <div className="max-w-4xl mx-auto">
-          <span className="text-primary uppercase tracking-[0.3em] text-sm mb-4 block">Curriculum Vitae</span>
           <h1 className="font-headline text-7xl md:text-9xl mb-24">Resume.</h1>
           
           <div className="space-y-32">
