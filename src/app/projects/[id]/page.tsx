@@ -52,12 +52,9 @@ export default function ProjectPage({ params }: { params: Promise<{ id: string }
         </DialogContent>
       </Dialog>
       
-      {/* Hero Section */}
+      {/* Hero Section - Lightbox functionality removed as requested */}
       <section className="relative h-screen w-full flex items-center px-8 md:px-16">
-        <div 
-          className="absolute inset-0 z-0 cursor-zoom-in"
-          onClick={() => setSelectedImage(project.mainImage)}
-        >
+        <div className="absolute inset-0 z-0">
           <Image
             src={project.mainImage}
             alt={project.title}
@@ -90,10 +87,7 @@ export default function ProjectPage({ params }: { params: Promise<{ id: string }
                 <p className="text-secondary text-xs uppercase tracking-widest mb-4">Year</p>
                 <p className="text-xl">{project.year}</p>
               </div>
-              <div>
-                <p className="text-secondary text-xs uppercase tracking-widest mb-4">Services</p>
-                <p className="text-xl">3D Visualization<br />Concept Design</p>
-              </div>
+              {/* Services section removed as requested */}
             </div>
           </div>
           <div className="lg:col-span-8">
@@ -103,7 +97,7 @@ export default function ProjectPage({ params }: { params: Promise<{ id: string }
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {project.gallery.slice(0, 2).map((img, i) => (
+              {project.gallery.map((img, i) => (
                 <div 
                   key={i} 
                   className="relative aspect-[4/5] bg-card overflow-hidden cursor-zoom-in group"
@@ -119,19 +113,6 @@ export default function ProjectPage({ params }: { params: Promise<{ id: string }
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors" />
                 </div>
               ))}
-              <div 
-                className="md:col-span-2 relative aspect-video bg-card overflow-hidden cursor-zoom-in group"
-                onClick={() => setSelectedImage(project.gallery[2])}
-              >
-                <Image 
-                  src={project.gallery[2]} 
-                  alt={`${project.title} gallery 3`} 
-                  fill 
-                  className="object-cover transition-slow group-hover:scale-105" 
-                  data-ai-hint="architecture wide" 
-                />
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors" />
-              </div>
             </div>
           </div>
         </div>

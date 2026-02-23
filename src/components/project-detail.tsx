@@ -16,6 +16,7 @@ export function ProjectDetail({ project }: { project: Project }) {
   
   const mainImage = PlaceHolderImages.find(img => img.id === project.mainImageId)?.imageUrl || "https://picsum.photos/seed/main/1920/1080"
   
+  // Logic to handle gallery images - ensures consistency with previous requests
   const galleryImages = project.galleryImageIds.map(id => {
     return PlaceHolderImages.find(img => img.id === id)?.imageUrl || `https://picsum.photos/seed/${id}/800/1000`
   }).slice(0, project.id === "3" ? 2 : undefined)
@@ -43,12 +44,9 @@ export function ProjectDetail({ project }: { project: Project }) {
         </DialogContent>
       </Dialog>
 
-      {/* Hero Section */}
+      {/* Hero Section - Lightbox functionality removed as requested */}
       <section className="relative h-screen w-full flex items-center px-8 md:px-16">
-        <div 
-          className="absolute inset-0 z-0 cursor-zoom-in"
-          onClick={() => setSelectedImage(mainImage)}
-        >
+        <div className="absolute inset-0 z-0">
           <Image
             src={mainImage}
             alt={project.title}
@@ -81,6 +79,7 @@ export function ProjectDetail({ project }: { project: Project }) {
                 <p className="text-secondary text-xs uppercase tracking-widest mb-4">Year</p>
                 <p className="text-xl">{project.year}</p>
               </div>
+              {/* Services section removed as requested */}
             </div>
           </div>
           <div className="lg:col-span-8">
