@@ -1,6 +1,7 @@
 
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
+import Link from "next/link"
 
 export default function ResumePage() {
   const sections = [
@@ -67,11 +68,11 @@ export default function ResumePage() {
             ))}
 
             {/* Services & Tools - Section 03 */}
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-12 pt-8">
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
               <div className="md:col-span-4">
                 <div className="sticky top-32">
-                  <span className="text-secondary text-xs uppercase tracking-[0.3em] block mb-4">03</span>
-                  <h2 className="font-headline text-4xl md:text-5xl leading-tight">Services & <br />Tools</h2>
+                  <span className="text-secondary text-xs uppercase tracking-[0.3em] block mb-2">03</span>
+                  <h2 className="text-secondary text-xs uppercase tracking-[0.3em]">Services &amp; Tools</h2>
                 </div>
               </div>
               <div className="md:col-span-8">
