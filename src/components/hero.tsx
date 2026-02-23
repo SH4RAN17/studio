@@ -1,4 +1,3 @@
-
 import Image from "next/image"
 import { PlaceHolderImages } from "@/lib/placeholder-images"
 
@@ -9,7 +8,7 @@ export function Hero() {
     <section className="relative h-screen w-full overflow-hidden flex items-end px-8 md:px-16 pb-24">
       <div className="absolute inset-0 z-0">
         <Image
-          src={heroImage?.imageUrl || "https://picsum.photos/seed/sb-hero/1920/1080"}
+          src={heroImage?.imageUrl || "/hero.jpg"}
           alt="Sharan Belel Portfolio"
           fill
           className="object-cover"
