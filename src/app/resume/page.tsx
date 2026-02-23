@@ -21,14 +21,14 @@ export default function ResumePage() {
   ]
 
   const tools = [
-    { name: "Revit", level: "Expert" },
-    { name: "3ds Max", level: "Expert" },
+    { name: "3DS Max", level: "Expert" },
+    { name: "Corona/Vray", level: "Expert" },
     { name: "Photoshop", level: "Advanced" },
-    { name: "Lumion", level: "Expert" },
-    { name: "Unreal Engine", level: "Advanced" },
+    { name: "After Effects", level: "Expert" },
+    { name: "Premiere Pro", level: "Advanced" },
     { name: "Maya", level: "Proficient" },
     { name: "D5 Render", level: "Advanced" },
-    { name: "SketchUp", level: "Expert" },
+    { name: "Unreal Engine", level: "Expert" },
   ]
 
   return (
