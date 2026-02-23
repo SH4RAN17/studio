@@ -67,7 +67,7 @@ export default function ResumePage() {
               <div>
                 <h2 className="font-headline text-4xl mb-8">Let&apos;s talk about your next vision.</h2>
                 <p className="text-secondary text-lg mb-12">I am always open to collaborations and new architectural challenges.</p>
-                <a href="mailto:contact@sharanbelel.com" className="inline-block py-4 px-12 bg-primary text-primary-foreground hover:bg-primary/90 transition-all font-medium uppercase tracking-widest text-sm">
+                <a href="mailto:belelsharan17@gmail.com" className="inline-block py-4 px-12 bg-primary text-primary-foreground hover:bg-primary/90 transition-all font-medium uppercase tracking-widest text-sm">
                   Send Message
                 </a>
               </div>
