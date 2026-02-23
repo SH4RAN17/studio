@@ -1,4 +1,3 @@
-
 export interface Project {
   id: string;
   title: string;
@@ -29,7 +28,7 @@ export const projectsData: Project[] = [
     description: "Shadow Play explores the transient nature of light within a residential setting. Through carefully calculated slatted screens and clerestory windows, the interior becomes a canvas for the sun's daily trajectory.",
     mainImageId: "project-2",
     services: ["Interior Rendering", "Lighting Design"],
-    galleryImageIds: ["project-2", "project-4", "project-6"]
+    galleryImageIds: ["project-2", "project-2_2", "project-2_3"]
   },
   {
     id: "3",
@@ -39,7 +38,7 @@ export const projectsData: Project[] = [
     description: "Challenging the glass-and-steel norms of cityscapes, the Urban Monolith presents a solid yet perforated volume. It investigates how heavy materiality can coexist with airy, light-filled public plazas.",
     mainImageId: "project-3",
     services: ["Architectural Design", "Urban Planning"],
-    galleryImageIds: ["project-3", "project-1", "project-5"]
+    galleryImageIds: ["project-3", "project-3_2", "project-3_3"]
   },
   {
     id: "4",
@@ -49,7 +48,7 @@ export const projectsData: Project[] = [
     description: "The Glass Sanctuary is an exercise in invisibility. Located in a dense forest, the structure uses high-performance glazing to blur the boundaries between domestic life and the surrounding ecosystem.",
     mainImageId: "project-4",
     services: ["3D Modelling", "Environmental Study"],
-    galleryImageIds: ["project-4", "project-2", "project-1"]
+    galleryImageIds: ["project-4", "project-4_2", "project-4_3"]
   },
   {
     id: "5",
@@ -59,7 +58,7 @@ export const projectsData: Project[] = [
     description: "Designed for a harsh desert environment, this commercial hub utilizes thermal mass and passive cooling strategies. Its geometry is inspired by ancient wind towers, reinterpreted through a modern aesthetic.",
     mainImageId: "project-5",
     services: ["Sustainable Design", "3D Visualization"],
-    galleryImageIds: ["project-5", "project-3", "project-6"]
+    galleryImageIds: ["project-5", "project-5_2", "project-5_3"]
   },
   {
     id: "6",
@@ -69,6 +68,6 @@ export const projectsData: Project[] = [
     description: "A pure exploration of raw textures. This study focuses on the intersection of cast concrete and oxidised metal, creating a dialogue between permanence and decay.",
     mainImageId: "project-6",
     services: ["Texture Study", "Material Design"],
-    galleryImageIds: ["project-6", "project-1", "project-2"]
+    galleryImageIds: ["project-6", "project-6_2", "project-6_3"]
   }
 ];

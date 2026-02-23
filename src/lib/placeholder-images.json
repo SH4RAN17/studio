@@ -8,51 +8,111 @@
     },
     {
       "id": "project-1",
-      "description": "A Quiet Corner in Warm Sunlight - Main",
+      "description": "Project 1 Main",
       "imageUrl": "/project-1.jpg",
       "imageHint": "minimalist interior"
     },
     {
       "id": "project-1_2",
-      "description": "A Quiet Corner in Warm Sunlight - Detail 1",
+      "description": "Project 1 Detail 1",
       "imageUrl": "/project-1_2.jpg",
       "imageHint": "interior detail"
     },
     {
       "id": "project-1_3",
-      "description": "A Quiet Corner in Warm Sunlight - Detail 2",
+      "description": "Project 1 Detail 2",
       "imageUrl": "/project-1_3.jpg",
       "imageHint": "interior lighting"
     },
     {
       "id": "project-2",
-      "description": "A Warm Everyday Kitchen",
+      "description": "Project 2 Main",
       "imageUrl": "/project-2.jpg",
       "imageHint": "kitchen render"
     },
     {
+      "id": "project-2_2",
+      "description": "Project 2 Detail 1",
+      "imageUrl": "/project-2_2.jpg",
+      "imageHint": "kitchen detail"
+    },
+    {
+      "id": "project-2_3",
+      "description": "Project 2 Detail 2",
+      "imageUrl": "/project-2_3.jpg",
+      "imageHint": "kitchen lighting"
+    },
+    {
       "id": "project-3",
-      "description": "Urban Monolith",
+      "description": "Project 3 Main",
       "imageUrl": "/project-3.jpg",
       "imageHint": "urban architecture"
     },
     {
+      "id": "project-3_2",
+      "description": "Project 3 Detail 1",
+      "imageUrl": "/project-3_2.jpg",
+      "imageHint": "building detail"
+    },
+    {
+      "id": "project-3_3",
+      "description": "Project 3 Detail 2",
+      "imageUrl": "/project-3_3.jpg",
+      "imageHint": "urban landscape"
+    },
+    {
       "id": "project-4",
-      "description": "The Glass Sanctuary",
+      "description": "Project 4 Main",
       "imageUrl": "/project-4.jpg",
       "imageHint": "glass house"
     },
     {
+      "id": "project-4_2",
+      "description": "Project 4 Detail 1",
+      "imageUrl": "/project-4_2.jpg",
+      "imageHint": "glass structure"
+    },
+    {
+      "id": "project-4_3",
+      "description": "Project 4 Detail 2",
+      "imageUrl": "/project-4_3.jpg",
+      "imageHint": "forest reflection"
+    },
+    {
       "id": "project-5",
-      "description": "Desert Oasis Museum",
+      "description": "Project 5 Main",
       "imageUrl": "/project-5.jpg",
       "imageHint": "desert architecture"
     },
     {
+      "id": "project-5_2",
+      "description": "Project 5 Detail 1",
+      "imageUrl": "/project-5_2.jpg",
+      "imageHint": "sand structure"
+    },
+    {
+      "id": "project-5_3",
+      "description": "Project 5 Detail 2",
+      "imageUrl": "/project-5_3.jpg",
+      "imageHint": "oasis lighting"
+    },
+    {
       "id": "project-6",
-      "description": "Brutalist Interior",
+      "description": "Project 6 Main",
       "imageUrl": "/project-6.jpg",
       "imageHint": "concrete interior"
+    },
+    {
+      "id": "project-6_2",
+      "description": "Project 6 Detail 1",
+      "imageUrl": "/project-6_2.jpg",
+      "imageHint": "concrete texture"
+    },
+    {
+      "id": "project-6_3",
+      "description": "Project 6 Detail 2",
+      "imageUrl": "/project-6_3.jpg",
+      "imageHint": "metal detail"
     }
   ]
 }
