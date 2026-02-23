@@ -8,9 +8,21 @@
     },
     {
       "id": "project-1",
-      "description": "A Quiet Corner in Warm Sunlight",
+      "description": "A Quiet Corner in Warm Sunlight - Main",
       "imageUrl": "/project-1.jpg",
       "imageHint": "minimalist interior"
+    },
+    {
+      "id": "project-1_2",
+      "description": "A Quiet Corner in Warm Sunlight - Detail 1",
+      "imageUrl": "/project-1_2.jpg",
+      "imageHint": "interior detail"
+    },
+    {
+      "id": "project-1_3",
+      "description": "A Quiet Corner in Warm Sunlight - Detail 2",
+      "imageUrl": "/project-1_3.jpg",
+      "imageHint": "interior lighting"
     },
     {
       "id": "project-2",
