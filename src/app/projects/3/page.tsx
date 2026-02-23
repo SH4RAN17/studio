@@ -1,4 +1,3 @@
-
 import { ProjectDetail } from "@/components/project-detail"
 import { projectsData } from "@/lib/projects-data"
 import { notFound } from "next/navigation"

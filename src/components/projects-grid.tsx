@@ -7,6 +7,7 @@ import { PlaceHolderImages } from "@/lib/placeholder-images"
 const projects = [
   { id: "1", title: "A Quiet Corner in Warm Sunlight", category: "Architecture", imageId: "project-1" },
   { id: "2", title: "A Warm Everyday Kitchen", category: "Interior", imageId: "project-2" },
+  { id: "3", title: "Clay Renders", category: "3D Art", imageId: "project-3" },
 ]
 
 export function ProjectsGrid() {
