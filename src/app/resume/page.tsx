@@ -15,7 +15,7 @@ export default function ResumePage() {
     {
       title: "Education",
       items: [
-        { role: "Bachelor of Design", company: "NID Ahmedabad", period: "2012 — 2016", desc: "Interdisciplinary design studies with a minor in digital media." },
+        { role: "B.Sc. Animation & VFX", company: "NID Ahmedabad", period: "2012 — 2016", desc: "Interdisciplinary design studies with a minor in digital media." },
       ]
     },
     {
@@ -70,7 +70,7 @@ export default function ResumePage() {
                 </a>
               </div>
               <div className="flex flex-col justify-end space-y-4 text-secondary uppercase tracking-[0.2em] text-sm">
-                <p>Mumbai, India</p>
+                <p>Mumbai</p>
                 <p>+91 8828691247</p>
               </div>
             </div>
