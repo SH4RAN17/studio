@@ -38,7 +38,7 @@ export function ProjectDetail({ project }: { project: Project }) {
             Back to projects
           </Link>
           <span className="text-primary uppercase tracking-[0.3em] text-sm mb-4 block">{project.category}</span>
-          <h1 className="font-headline text-7xl md:text-[120px] leading-none mb-8">{project.title}</h1>
+          <h1 className="font-headline text-5xl md:text-8xl leading-none mb-8">{project.title}</h1>
         </div>
       </section>
 

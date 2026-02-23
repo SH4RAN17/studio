@@ -47,7 +47,7 @@ export default async function ProjectPage({ params }: { params: { id: string } }
             Back to projects
           </Link>
           <span className="text-primary uppercase tracking-[0.3em] text-sm mb-4 block">{project.category}</span>
-          <h1 className="font-headline text-7xl md:text-[120px] leading-none mb-8">{project.title}</h1>
+          <h1 className="font-headline text-5xl md:text-8xl leading-none mb-8">{project.title}</h1>
         </div>
       </section>
 
@@ -68,7 +68,7 @@ export default async function ProjectPage({ params }: { params: { id: string } }
           </div>
           <div className="lg:col-span-8">
             <h2 className="text-secondary text-xs uppercase tracking-widest mb-8">About the project</h2>
-            <p className="text-2xl md:text-3xl leading-relaxed mb-16 text-foreground">
+            <p className="text-lg leading-relaxed mb-16 text-secondary max-w-3xl">
               {project.description}
             </p>
             
