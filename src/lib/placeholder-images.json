@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "hero-bg",
-      "description": "Custom hero render from public folder",
+      "description": "User custom kitchen render in public folder",
       "imageUrl": "/hero.jpg",
-      "imageHint": "architecture interior"
+      "imageHint": "kitchen interior"
     },
     {
       "id": "project-1",
