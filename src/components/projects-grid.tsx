@@ -23,9 +23,6 @@ export function ProjectsGrid() {
             <span className="text-primary uppercase tracking-widest text-xs mb-4 block">Portfolio</span>
             <h2 className="font-headline text-5xl md:text-7xl">Selected Works</h2>
           </div>
-          <div className="hidden md:block text-secondary text-right max-w-xs">
-            <p>A curated selection of projects exploring materiality and spatial dynamics.</p>
-          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">

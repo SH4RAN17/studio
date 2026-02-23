@@ -19,7 +19,7 @@ export function About() {
             <div className="mt-12 flex flex-wrap gap-x-12 gap-y-4 text-sm uppercase tracking-widest text-primary font-medium">
               <span>Archviz</span>
               <span>Product</span>
-              <span>Interior Architecture</span>
+              <span>Modelling</span>
             </div>
           </div>
         </div>
