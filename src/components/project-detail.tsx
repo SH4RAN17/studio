@@ -18,7 +18,7 @@ export function ProjectDetail({ project }: { project: Project }) {
   
   const galleryImages = project.galleryImageIds.map(id => {
     return PlaceHolderImages.find(img => img.id === id)?.imageUrl || `https://picsum.photos/seed/${id}/800/1000`
-  })
+  }).slice(0, project.id === "3" ? 2 : undefined)
 
   return (
     <main className="min-h-screen bg-background">
@@ -80,14 +80,6 @@ export function ProjectDetail({ project }: { project: Project }) {
               <div>
                 <p className="text-secondary text-xs uppercase tracking-widest mb-4">Year</p>
                 <p className="text-xl">{project.year}</p>
-              </div>
-              <div>
-                <p className="text-secondary text-xs uppercase tracking-widest mb-4">Services</p>
-                <div className="space-y-1">
-                  {project.services.map((service, i) => (
-                    <p key={i} className="text-xl">{service}</p>
-                  ))}
-                </div>
               </div>
             </div>
           </div>
