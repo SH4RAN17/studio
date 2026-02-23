@@ -1,19 +1,16 @@
 import Image from "next/image"
-import { PlaceHolderImages } from "@/lib/placeholder-images"
 
 export function Hero() {
-  const heroImage = PlaceHolderImages.find(img => img.id === "hero-bg")
-
   return (
     <section className="relative h-screen w-full overflow-hidden flex items-end px-8 md:px-16 pb-24">
       <div className="absolute inset-0 z-0">
         <Image
-          src={heroImage?.imageUrl || "/hero.jpg"}
+          src="/hero.jpg"
           alt="Sharan Belel Portfolio"
           fill
           className="object-cover"
           priority
-          data-ai-hint={heroImage?.imageHint || "architecture interior"}
+          data-ai-hint="architecture interior"
         />
         <div className="absolute inset-0 cinematic-overlay" />
       </div>
