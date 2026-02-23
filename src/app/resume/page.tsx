@@ -6,12 +6,6 @@ import Link from "next/link"
 export default function ResumePage() {
   const sections = [
     {
-      title: "Experience",
-      items: [
-        { role: "Senior Architectural Visualizer", company: "Atelier Grey", period: "2021 — Present", desc: "Leading the visualization team for high-end residential projects across Europe." },
-      ]
-    },
-    {
       title: "Education",
       items: [
         { role: "B.Sc. Animation & VFX", company: "Thakur College of Science & Commerce (Kandivali E)", period: "2025 - 2028", desc: "Interdisciplinary design studies with a minor in digital media." },
