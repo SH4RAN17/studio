@@ -1,4 +1,3 @@
-
 "use client"
 
 import Link from "next/link"
@@ -47,7 +46,6 @@ export function ProjectsGrid() {
                 <div className="flex justify-between items-start">
                   <div>
                     <h3 className="font-headline text-2xl mb-1 group-hover:text-primary transition-colors">{project.title}</h3>
-                    <p className="text-sm text-secondary uppercase tracking-widest">{project.category}</p>
                   </div>
                   <span className="text-xs text-secondary font-mono">0{project.id}</span>
                 </div>
