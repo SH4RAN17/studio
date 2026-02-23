@@ -1,4 +1,3 @@
-
 "use client"
 
 import Link from "next/link"
@@ -22,7 +21,7 @@ export function Navigation() {
       isScrolled ? "bg-background/80 backdrop-blur-md py-4 border-b border-white/5" : "bg-transparent"
     )}>
       <Link href="/" className="font-headline text-2xl tracking-tighter">
-        S. BELEL
+        Hi!!
       </Link>
       
       <div className="flex items-center gap-8 text-sm font-medium tracking-widest uppercase">
