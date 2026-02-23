@@ -30,6 +30,17 @@ export default function ResumePage() {
     { name: "Unreal Engine", level: "Beginner" },
   ]
 
+  const skills = [
+    "Architectural Visualization",
+    "3D Modeling & Assets",
+    "Lighting & Materiality",
+    "Post-production",
+    "Conceptual Design",
+    "Interior Architecture",
+    "Spatial Planning",
+    "Digital Art & VFX"
+  ]
+
   return (
     <main className="min-h-screen bg-background text-foreground">
       <Navigation />
@@ -79,6 +90,26 @@ export default function ResumePage() {
                     <div key={i} className="py-6 flex justify-between items-center group hover:bg-white/[0.02] transition-all px-2">
                       <span className="font-headline text-2xl font-medium group-hover:text-primary transition-colors">{tool.name}</span>
                       <span className="text-sm uppercase tracking-widest text-secondary group-hover:text-foreground transition-colors">{tool.level}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Skills - Section 04 */}
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
+              <div className="md:col-span-4">
+                <div className="sticky top-32">
+                  <span className="text-secondary text-xs uppercase tracking-[0.3em] block mb-2">04</span>
+                  <h2 className="text-secondary text-xs uppercase tracking-[0.3em]">Skills</h2>
+                </div>
+              </div>
+              <div className="md:col-span-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
+                  {skills.map((skill, i) => (
+                    <div key={i} className="flex items-center gap-4 group">
+                      <div className="w-1 h-1 bg-primary/40 group-hover:bg-primary transition-colors rounded-full" />
+                      <span className="text-lg text-secondary group-hover:text-foreground transition-colors">{skill}</span>
                     </div>
                   ))}
                 </div>
