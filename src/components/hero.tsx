@@ -13,7 +13,7 @@ export function Hero() {
           fill
           className="object-cover"
           priority
-          data-ai-hint="architecture dark"
+          data-ai-hint={heroImage?.imageHint || "architecture dark"}
         />
         <div className="absolute inset-0 cinematic-overlay" />
       </div>
