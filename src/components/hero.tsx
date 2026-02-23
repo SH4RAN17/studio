@@ -21,7 +21,7 @@ export function Hero() {
       <div className="relative z-10 w-full max-w-7xl animate-fade-in-up">
         <span className="text-primary uppercase tracking-[0.3em] text-sm mb-4 block">Archviz and 3D Artist</span>
         <h1 className="font-headline text-[clamp(64px,12vw,140px)] leading-[0.9] mb-8">
-          Sharan<br />Belel.
+          Sharan Belel
         </h1>
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-8 mt-12 border-t border-white/10 pt-8">
           <p className="max-w-md text-secondary text-lg">
@@ -31,7 +31,6 @@ export function Hero() {
             <div className="h-12 w-12 border border-white/20 flex items-center justify-center rounded-full hover:border-primary transition-colors cursor-pointer group">
               <div className="w-2 h-2 bg-white group-hover:bg-primary transition-colors rounded-full" />
             </div>
-            <p className="text-sm uppercase tracking-widest flex items-center">Explore Work</p>
           </div>
         </div>
       </div>
