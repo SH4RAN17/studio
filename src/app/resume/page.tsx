@@ -21,7 +21,7 @@ export default function ResumePage() {
 
   const tools = [
     { name: "3DS Max", level: "intermediate" },
-    { name: "Corona/Vray", level: "intermediate" },
+    { name: "Corona/Vray", level: "intermediate/beginner" },
     { name: "Photoshop", level: "intermediate" },
     { name: "After Effects", level: "intermediate" },
     { name: "Premiere Pro", level: "intermediate" },
