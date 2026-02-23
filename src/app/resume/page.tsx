@@ -31,14 +31,14 @@ export default function ResumePage() {
   ]
 
   const skills = [
-    "Architectural Visualization",
-    "3D Modeling & Assets",
-    "Lighting & Materiality",
-    "Post-production",
-    "Conceptual Design",
+    "3D Modelling",
+    "Communication Skills",
+    "Lighting",
+    "Visual StoryTelling",
+    "Photorealistic Rendering",
     "Interior Architecture",
     "Spatial Planning",
-    "Digital Art & VFX"
+    "Creative Thinking"
   ]
 
   return (
