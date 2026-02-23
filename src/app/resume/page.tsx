@@ -2,7 +2,6 @@
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Separator } from "@/components/ui/separator"
-import Link from "next/link"
 
 export default function ResumePage() {
   const sections = [
@@ -16,14 +15,13 @@ export default function ResumePage() {
     {
       title: "Education",
       items: [
-        { role: "Master of Architecture", company: "Royal Academy of Arts", period: "2016 — 2018", desc: "Focus on digital fabrication and cinematic representation of space." },
         { role: "Bachelor of Design", company: "NID Ahmedabad", period: "2012 — 2016", desc: "Interdisciplinary design studies with a minor in digital media." },
       ]
     },
     {
       title: "Selected Skills",
       items: [
-        { role: "Software", desc: "Unreal Engine 5, Rhino 7, Grasshopper, 3ds Max, Corona Renderer, Adobe Creative Suite, AutoCAD." },
+        { role: "Software", desc: "Unreal Engine 5, Rhino 7, Grasshopper, 3ds Max, Commission Renderer, Adobe Creative Suite, AutoCAD." },
         { role: "Expertise", desc: "Real-time Visualization, Procedural Modeling, Material Science, Lighting Design, Spatial Storytelling." },
       ]
     }
@@ -73,12 +71,7 @@ export default function ResumePage() {
               </div>
               <div className="flex flex-col justify-end space-y-4 text-secondary uppercase tracking-[0.2em] text-sm">
                 <p>Mumbai, India</p>
-                <p>+91 (0) 987 654 3210</p>
-                <div className="flex gap-8 pt-4">
-                  <Link href="#" className="hover:text-white">In</Link>
-                  <Link href="#" className="hover:text-white">Be</Link>
-                  <Link href="#" className="hover:text-white">Ig</Link>
-                </div>
+                <p>+91 8828691247</p>
               </div>
             </div>
           </div>
