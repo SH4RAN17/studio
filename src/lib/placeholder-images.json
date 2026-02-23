@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "hero-bg",
-      "description": "Cinematic dark architectural render",
-      "imageUrl": "https://images.unsplash.com/photo-1552925766-63ab07391e02?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxhcmNoaXRlY3R1cmUlMjBkYXJrfGVufDB8fHx8MTc3MTgzMDY3Nnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "architecture dark"
+      "description": "Warm wooden kitchen with marble backsplash and soft lighting",
+      "imageUrl": "https://images.unsplash.com/photo-1556911227-43f77bb329b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxraXRjaGVuJTIwd29vZHxlbnwwfHx8fDE3NzE4MzA2NzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "kitchen wood"
     },
     {
       "id": "project-1",
