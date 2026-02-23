@@ -36,7 +36,7 @@ export default function ResumePage() {
     "Lighting",
     "Visual StoryTelling",
     "Photorealistic Rendering",
-    "Interior Architecture",
+    "Attention to Detail",
     "Spatial Planning",
     "Creative Thinking"
   ]
