@@ -1,12 +1,18 @@
 
+"use client"
+
+import * as React from "react"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowLeft } from "lucide-react"
+import { useState } from "react"
+import { Dialog, DialogContent } from "@/components/ui/dialog"
 
-export default async function ProjectPage({ params }: { params: { id: string } }) {
-  const { id } = await params
+export default function ProjectPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = React.use(params)
+  const [selectedImage, setSelectedImage] = useState<string | null>(null)
   
   // Static data simulation
   const project = {
@@ -26,10 +32,32 @@ export default async function ProjectPage({ params }: { params: { id: string } }
   return (
     <main className="min-h-screen bg-background">
       <Navigation />
+
+      {/* Fullscreen Image Dialog */}
+      <Dialog open={!!selectedImage} onOpenChange={(open) => !open && setSelectedImage(null)}>
+        <DialogContent className="max-w-[95vw] w-full max-h-[95vh] h-full p-0 bg-black/90 border-none overflow-hidden sm:rounded-none">
+          <div className="relative w-full h-full flex items-center justify-center p-4">
+            {selectedImage && (
+              <div className="relative w-full h-full">
+                <Image 
+                  src={selectedImage} 
+                  alt="Full size visualization" 
+                  fill 
+                  className="object-contain" 
+                  priority
+                />
+              </div>
+            )}
+          </div>
+        </DialogContent>
+      </Dialog>
       
       {/* Hero Section */}
       <section className="relative h-screen w-full flex items-center px-8 md:px-16">
-        <div className="absolute inset-0 z-0">
+        <div 
+          className="absolute inset-0 z-0 cursor-zoom-in"
+          onClick={() => setSelectedImage(project.mainImage)}
+        >
           <Image
             src={project.mainImage}
             alt={project.title}
@@ -41,13 +69,15 @@ export default async function ProjectPage({ params }: { params: { id: string } }
           <div className="absolute inset-0 bg-black/40" />
         </div>
         
-        <div className="relative z-10 w-full max-w-7xl">
-          <Link href="/#projects" className="flex items-center gap-2 text-sm uppercase tracking-widest text-white/60 hover:text-primary transition-colors mb-12">
-            <ArrowLeft className="w-4 h-4" />
-            Back to projects
-          </Link>
-          <span className="text-primary uppercase tracking-[0.3em] text-sm mb-4 block">{project.category}</span>
-          <h1 className="font-headline text-5xl md:text-8xl leading-none mb-8">{project.title}</h1>
+        <div className="relative z-10 w-full max-w-7xl pointer-events-none">
+          <div className="pointer-events-auto">
+            <Link href="/#projects" className="flex items-center gap-2 text-sm uppercase tracking-widest text-white/60 hover:text-primary transition-colors mb-12">
+              <ArrowLeft className="w-4 h-4" />
+              Back to projects
+            </Link>
+            <span className="text-primary uppercase tracking-[0.3em] text-sm mb-4 block">{project.category}</span>
+            <h1 className="font-headline text-5xl md:text-8xl leading-none mb-8">{project.title}</h1>
+          </div>
         </div>
       </section>
 
@@ -74,12 +104,33 @@ export default async function ProjectPage({ params }: { params: { id: string } }
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {project.gallery.slice(0, 2).map((img, i) => (
-                <div key={i} className="relative aspect-[4/5] bg-card overflow-hidden">
-                  <Image src={img} alt={`${project.title} gallery ${i}`} fill className="object-cover" data-ai-hint="architecture detail" />
+                <div 
+                  key={i} 
+                  className="relative aspect-[4/5] bg-card overflow-hidden cursor-zoom-in group"
+                  onClick={() => setSelectedImage(img)}
+                >
+                  <Image 
+                    src={img} 
+                    alt={`${project.title} gallery ${i}`} 
+                    fill 
+                    className="object-cover transition-slow group-hover:scale-105" 
+                    data-ai-hint="architecture detail" 
+                  />
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors" />
                 </div>
               ))}
-              <div className="md:col-span-2 relative aspect-video bg-card overflow-hidden">
-                <Image src={project.gallery[2]} alt={`${project.title} gallery 3`} fill className="object-cover" data-ai-hint="architecture wide" />
+              <div 
+                className="md:col-span-2 relative aspect-video bg-card overflow-hidden cursor-zoom-in group"
+                onClick={() => setSelectedImage(project.gallery[2])}
+              >
+                <Image 
+                  src={project.gallery[2]} 
+                  alt={`${project.title} gallery 3`} 
+                  fill 
+                  className="object-cover transition-slow group-hover:scale-105" 
+                  data-ai-hint="architecture wide" 
+                />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors" />
               </div>
             </div>
           </div>

@@ -1,4 +1,6 @@
 
+"use client"
+
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import Image from "next/image"
@@ -6,8 +8,12 @@ import Link from "next/link"
 import { ArrowLeft } from "lucide-react"
 import { Project } from "@/lib/projects-data"
 import { PlaceHolderImages } from "@/lib/placeholder-images"
+import { useState } from "react"
+import { Dialog, DialogContent } from "@/components/ui/dialog"
 
 export function ProjectDetail({ project }: { project: Project }) {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null)
+  
   const mainImage = PlaceHolderImages.find(img => img.id === project.mainImageId)?.imageUrl || "https://picsum.photos/seed/main/1920/1080"
   
   const galleryImages = project.galleryImageIds.map(id => {
@@ -18,9 +24,31 @@ export function ProjectDetail({ project }: { project: Project }) {
     <main className="min-h-screen bg-background">
       <Navigation />
       
+      {/* Fullscreen Image Dialog */}
+      <Dialog open={!!selectedImage} onOpenChange={(open) => !open && setSelectedImage(null)}>
+        <DialogContent className="max-w-[95vw] w-full max-h-[95vh] h-full p-0 bg-black/90 border-none overflow-hidden sm:rounded-none">
+          <div className="relative w-full h-full flex items-center justify-center p-4">
+            {selectedImage && (
+              <div className="relative w-full h-full">
+                <Image 
+                  src={selectedImage} 
+                  alt="Full size visualization" 
+                  fill 
+                  className="object-contain" 
+                  priority
+                />
+              </div>
+            )}
+          </div>
+        </DialogContent>
+      </Dialog>
+
       {/* Hero Section */}
       <section className="relative h-screen w-full flex items-center px-8 md:px-16">
-        <div className="absolute inset-0 z-0">
+        <div 
+          className="absolute inset-0 z-0 cursor-zoom-in"
+          onClick={() => setSelectedImage(mainImage)}
+        >
           <Image
             src={mainImage}
             alt={project.title}
@@ -32,13 +60,15 @@ export function ProjectDetail({ project }: { project: Project }) {
           <div className="absolute inset-0 bg-black/40" />
         </div>
         
-        <div className="relative z-10 w-full max-w-7xl">
-          <Link href="/#projects" className="flex items-center gap-2 text-sm uppercase tracking-widest text-white/60 hover:text-primary transition-colors mb-12">
-            <ArrowLeft className="w-4 h-4" />
-            Back to projects
-          </Link>
-          <span className="text-primary uppercase tracking-[0.3em] text-sm mb-4 block">{project.category}</span>
-          <h1 className="font-headline text-4xl md:text-5xl lg:text-6xl leading-tight mb-8 max-w-4xl">{project.title}</h1>
+        <div className="relative z-10 w-full max-w-7xl pointer-events-none">
+          <div className="pointer-events-auto">
+            <Link href="/#projects" className="flex items-center gap-2 text-sm uppercase tracking-widest text-white/60 hover:text-primary transition-colors mb-12 w-fit">
+              <ArrowLeft className="w-4 h-4" />
+              Back to projects
+            </Link>
+            <span className="text-primary uppercase tracking-[0.3em] text-sm mb-4 block">{project.category}</span>
+            <h1 className="font-headline text-4xl md:text-5xl lg:text-6xl leading-tight mb-8 max-w-4xl">{project.title}</h1>
+          </div>
         </div>
       </section>
 
@@ -51,6 +81,14 @@ export function ProjectDetail({ project }: { project: Project }) {
                 <p className="text-secondary text-xs uppercase tracking-widest mb-4">Year</p>
                 <p className="text-xl">{project.year}</p>
               </div>
+              <div>
+                <p className="text-secondary text-xs uppercase tracking-widest mb-4">Services</p>
+                <div className="space-y-1">
+                  {project.services.map((service, i) => (
+                    <p key={i} className="text-xl">{service}</p>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
           <div className="lg:col-span-8">
@@ -61,14 +99,19 @@ export function ProjectDetail({ project }: { project: Project }) {
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {galleryImages.map((img, i) => (
-                <div key={i} className="relative aspect-[4/5] bg-card overflow-hidden">
+                <div 
+                  key={i} 
+                  className="relative aspect-[4/5] bg-card overflow-hidden cursor-zoom-in group"
+                  onClick={() => setSelectedImage(img)}
+                >
                   <Image 
                     src={img} 
                     alt={`${project.title} detail ${i}`} 
                     fill 
-                    className="object-cover transition-slow" 
+                    className="object-cover transition-slow group-hover:scale-105" 
                     data-ai-hint="architecture detail" 
                   />
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors" />
                 </div>
               ))}
             </div>
