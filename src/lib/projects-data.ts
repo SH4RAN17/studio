@@ -38,6 +38,6 @@ export const projectsData: Project[] = [
     description: "A collection of clay renders showcasing the raw geometry and intricate details of 3D models. These renders focus on form, composition, and silhouette without the distraction of textures and complex materials. This approach allows for a pure appreciation of the modeling craftsmanship and spatial relationships within the scene. It highlights the structural integrity and artistic vision behind the underlying 3D structures.",
     mainImageId: "project-3",
     services: ["3D Modelling", "Clay Rendering"],
-    galleryImageIds: ["project-3", "project-3_2", "project-3_3"]
+    galleryImageIds: ["project-3", "project-3_2"]
   }
 ];
