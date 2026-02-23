@@ -1,4 +1,3 @@
-
 export interface Project {
   id: string;
   title: string;
@@ -34,7 +33,7 @@ export const projectsData: Project[] = [
   {
     id: "3",
     title: "Clay Renders",
-    category: "3D Art",
+    category: "other renders",
     year: "2026",
     description: "A collection of clay renders showcasing the raw geometry and intricate details of 3D models. These renders focus on form, composition, and silhouette without the distraction of textures and complex materials. This approach allows for a pure appreciation of the modeling craftsmanship and spatial relationships within the scene. It highlights the structural integrity and artistic vision behind the underlying 3D structures.",
     mainImageId: "project-3",

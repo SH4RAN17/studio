@@ -1,4 +1,3 @@
-
 "use client"
 
 import Link from "next/link"
@@ -8,7 +7,7 @@ import { PlaceHolderImages } from "@/lib/placeholder-images"
 const projects = [
   { id: "1", title: "A Quiet Corner in Warm Sunlight", category: "Living Room", imageId: "project-1" },
   { id: "2", title: "A Warm Everyday Kitchen", category: "Kitchen", imageId: "project-2" },
-  { id: "3", title: "Clay Renders", category: "3D Art", imageId: "project-3" },
+  { id: "3", title: "Clay Renders", category: "other renders", imageId: "project-3" },
 ]
 
 export function ProjectsGrid() {
