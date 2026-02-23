@@ -19,7 +19,7 @@ export const projectsData: Project[] = [
     description: "The scene includes floor to ceiling windows with sheer curtains diffusing natural light, creating natural shadow effects on the herringbone wooden floor and textured rug. A sculptural lounge chair with leather details is the central focus point, emphasizing the importance of craftsmanship and material expressiveness. The neutral-colored walls are contrasted with a dramatic piece of artwork. Great care was taken to recreate photorealistic lighting effects, scale, and material details to maximize realism. This scene clearly shows a great emphasis on natural lighting, balanced composition, and material expressiveness, which are common in high-end architectural visualization.",
     mainImageId: "project-1",
     services: ["3D Visualization", "Concept Design"],
-    galleryImageIds: ["project-1_2", "project-1_3"]
+    galleryImageIds: ["project-1", "project-1_2", "project-1_3"]
   },
   {
     id: "2",
