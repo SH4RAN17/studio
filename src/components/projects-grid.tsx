@@ -38,10 +38,10 @@ export function ProjectsGrid() {
                     src={imageData?.imageUrl || `https://picsum.photos/seed/${project.id}/800/1000`}
                     alt={project.title}
                     fill
-                    className="object-cover grayscale hover:grayscale-0 transition-slow scale-105 group-hover:scale-110"
+                    className="object-cover transition-slow scale-105 group-hover:scale-110"
                     data-ai-hint={imageData?.imageHint || "architecture"}
                   />
-                  <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500" />
+                  <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500" />
                 </div>
                 <div className="flex justify-between items-start">
                   <div>
