@@ -17,8 +17,8 @@ export function About() {
               My area of specialization is in realistic interior and exterior 3D rendering using industry standard software such as Autodesk 3ds Max, Maya and Corona, Vray Renderer. My work is centered on accurate scale, lighting, material, and composition. I am very interested in learning how real-world design translates into digital spaces and am constantly working on improving my skills through hands-on experience, analysis, and feedback. I am very keen into learning interior and exterior spaces in depth. I am dedicated to becoming a better visual storyteller and hope to build a career in the creative industry where I can deliver high-quality, visually engaging 3D experiences for architectural, design, and media projects.
             </p>
             <div className="mt-12 flex flex-wrap gap-x-12 gap-y-4 text-sm uppercase tracking-widest text-primary font-medium">
-              <span>Visualization</span>
-              <span>Concept Design</span>
+              <span>Archviz</span>
+              <span>Product</span>
               <span>Interior Architecture</span>
             </div>
           </div>
