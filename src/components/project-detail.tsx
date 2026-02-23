@@ -55,7 +55,7 @@ export function ProjectDetail({ project }: { project: Project }) {
           </div>
           <div className="lg:col-span-8">
             <h2 className="text-secondary text-xs uppercase tracking-widest mb-8">About the project</h2>
-            <p className="text-2xl md:text-3xl leading-relaxed mb-16 text-foreground">
+            <p className="text-lg leading-relaxed mb-16 text-secondary max-w-3xl">
               {project.description}
             </p>
             
