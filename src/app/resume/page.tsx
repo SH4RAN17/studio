@@ -21,10 +21,10 @@ export default function ResumePage() {
 
   const tools = [
     { name: "3DS Max", level: "Intermediate/Beginner" },
-    { name: "Corona/Vray", level: "Intermediate/Beginner" },
-    { name: "Photoshop", level: "Intermediate/Beginner" },
-    { name: "After Effects", level: "Intermediate/Beginner" },
-    { name: "Premiere Pro", level: "Intermediate/Beginner" },
+    { name: "Corona/Vray", level: "intermediate" },
+    { name: "Photoshop", level: "intermediate" },
+    { name: "After Effects", level: "intermediate" },
+    { name: "Premiere Pro", level: "intermediate" },
     { name: "Maya", level: "beginner" },
     { name: "D5 Render", level: "Beginner" },
     { name: "Unreal Engine", level: "Beginner" },
