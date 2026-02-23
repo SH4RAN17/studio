@@ -57,10 +57,6 @@ export default async function ProjectPage({ params }: { params: { id: string } }
           <div className="lg:col-span-4">
             <div className="space-y-12 sticky top-32">
               <div>
-                <p className="text-secondary text-xs uppercase tracking-widest mb-4">Location</p>
-                <p className="text-xl">{project.location}</p>
-              </div>
-              <div>
                 <p className="text-secondary text-xs uppercase tracking-widest mb-4">Year</p>
                 <p className="text-xl">{project.year}</p>
               </div>
