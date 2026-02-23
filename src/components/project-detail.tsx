@@ -1,3 +1,4 @@
+
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import Image from "next/image"
@@ -37,7 +38,7 @@ export function ProjectDetail({ project }: { project: Project }) {
             Back to projects
           </Link>
           <span className="text-primary uppercase tracking-[0.3em] text-sm mb-4 block">{project.category}</span>
-          <h1 className="font-headline text-4xl md:text-6xl lg:text-7xl leading-tight mb-8 max-w-4xl">{project.title}</h1>
+          <h1 className="font-headline text-4xl md:text-5xl lg:text-6xl leading-tight mb-8 max-w-4xl">{project.title}</h1>
         </div>
       </section>
 
@@ -54,7 +55,7 @@ export function ProjectDetail({ project }: { project: Project }) {
           </div>
           <div className="lg:col-span-8">
             <h2 className="text-secondary text-xs uppercase tracking-widest mb-8">About the project</h2>
-            <p className="text-base md:text-lg leading-relaxed mb-16 text-secondary max-w-3xl">
+            <p className="text-sm md:text-base leading-relaxed mb-16 text-secondary max-w-3xl">
               {project.description}
             </p>
             
@@ -66,7 +67,13 @@ export function ProjectDetail({ project }: { project: Project }) {
               ))}
               {galleryImages[2] && (
                 <div className="md:col-span-2 relative aspect-video bg-card overflow-hidden">
-                  <Image src={galleryImages[2]} alt={`${project.title} wide`} fill className="object-cover transition-slow" data-ai-hint="architecture wide" />
+                  <Image 
+                    src={galleryImages[2]} 
+                    alt={`${project.title} wide`} 
+                    fill 
+                    className="object-contain transition-slow" 
+                    data-ai-hint="architecture wide" 
+                  />
                 </div>
               )}
             </div>
