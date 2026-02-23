@@ -6,8 +6,8 @@ import Image from "next/image"
 import { PlaceHolderImages } from "@/lib/placeholder-images"
 
 const projects = [
-  { id: "1", title: "Concrete Pavilion", category: "Architecture", imageId: "project-1" },
-  { id: "2", title: "Shadow Play", category: "Interior", imageId: "project-2" },
+  { id: "1", title: "A Quiet Corner in Warm Sunlight", category: "Architecture", imageId: "project-1" },
+  { id: "2", title: "A Warm Everyday Kitchen", category: "Interior", imageId: "project-2" },
   { id: "3", title: "Urban Monolith", category: "Conceptual", imageId: "project-3" },
   { id: "4", title: "Glass Sanctuary", category: "Residential", imageId: "project-4" },
   { id: "5", title: "Desert Oasis", category: "Commercial", imageId: "project-5" },

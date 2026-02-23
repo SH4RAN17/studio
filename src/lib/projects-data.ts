@@ -13,7 +13,7 @@ export interface Project {
 export const projectsData: Project[] = [
   {
     id: "1",
-    title: "Minimal Concrete Pavilion",
+    title: "A Quiet Corner in Warm Sunlight",
     category: "Architecture",
     year: "2023",
     description: "A study in brutalist honesty, the Concrete Pavilion is designed as a sanctuary of silence. Using exposed board-formed concrete and deep overhangs, the structure manipulates natural light to create shifting atmospheres throughout the day.",
@@ -23,7 +23,7 @@ export const projectsData: Project[] = [
   },
   {
     id: "2",
-    title: "Shadow Play",
+    title: "A Warm Everyday Kitchen",
     category: "Interior",
     year: "2024",
     description: "Shadow Play explores the transient nature of light within a residential setting. Through carefully calculated slatted screens and clerestory windows, the interior becomes a canvas for the sun's daily trajectory.",
