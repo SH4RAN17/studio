@@ -51,14 +51,6 @@ export function ProjectDetail({ project }: { project: Project }) {
                 <p className="text-secondary text-xs uppercase tracking-widest mb-4">Year</p>
                 <p className="text-xl">{project.year}</p>
               </div>
-              <div>
-                <p className="text-secondary text-xs uppercase tracking-widest mb-4">Services</p>
-                <p className="text-xl">
-                  {project.services.map((service, i) => (
-                    <span key={i}>{service}{i < project.services.length - 1 && <br />}</span>
-                  ))}
-                </p>
-              </div>
             </div>
           </div>
           <div className="lg:col-span-8">

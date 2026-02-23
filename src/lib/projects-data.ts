@@ -15,8 +15,8 @@ export const projectsData: Project[] = [
     id: "1",
     title: "A Quiet Corner in Warm Sunlight",
     category: "Architecture",
-    year: "2023",
-    description: "A study in brutalist honesty, the Concrete Pavilion is designed as a sanctuary of silence. Using exposed board-formed concrete and deep overhangs, the structure manipulates natural light to create shifting atmospheres throughout the day.",
+    year: "2026",
+    description: "The scene includes floor to ceiling windows with sheer curtains diffusing natural light, creating natural shadow effects on the herringbone wooden floor and textured rug. A sculptural lounge chair with leather details is the central focus point, emphasizing the importance of craftsmanship and material expressiveness. The neutral-colored walls are contrasted with a dramatic piece of artwork. Great care was taken to recreate photorealistic lighting effects, scale, and material details to maximize realism. This scene clearly shows a great emphasis on natural lighting, balanced composition, and material expressiveness, which are common in high-end architectural visualization.",
     mainImageId: "project-1",
     services: ["3D Visualization", "Concept Design"],
     galleryImageIds: ["project-1", "project-6", "project-3"]
