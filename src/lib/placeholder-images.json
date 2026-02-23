@@ -1,3 +1,46 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-bg",
+      "description": "Cinematic dark architectural render",
+      "imageUrl": "https://images.unsplash.com/photo-1552925766-63ab07391e02?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxhcmNoaXRlY3R1cmUlMjBkYXJrfGVufDB8fHx8MTc3MTgzMDY3Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "architecture dark"
+    },
+    {
+      "id": "project-1",
+      "description": "Minimalist Concrete Pavilion",
+      "imageUrl": "https://images.unsplash.com/photo-1508107749649-a371e8cece60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjb25jcmV0ZSUyMGFyY2hpdGVjdHVyZXxlbnwwfHx8fDE3NzE4MzA2NzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "concrete architecture"
+    },
+    {
+      "id": "project-2",
+      "description": "Light and Shadow Study",
+      "imageUrl": "https://images.unsplash.com/photo-1765370847579-70d5d83401d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtaW5pbWFsaXN0JTIwbGlnaHR8ZW58MHx8fHwxNzcxODMwNjc2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "minimalist light"
+    },
+    {
+      "id": "project-3",
+      "description": "Urban Monolith",
+      "imageUrl": "https://images.unsplash.com/photo-1696592877189-83eb668ba71e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx1cmJhbiUyMGJ1aWxkaW5nfGVufDB8fHx8MTc3MTgzMDY3Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "urban building"
+    },
+    {
+      "id": "project-4",
+      "description": "The Glass Sanctuary",
+      "imageUrl": "https://images.unsplash.com/photo-1660924568518-657fb95ac2d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxnbGFzcyUyMGhvdXNlfGVufDB8fHx8MTc3MTgzMDY3Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "glass house"
+    },
+    {
+      "id": "project-5",
+      "description": "Desert Oasis Museum",
+      "imageUrl": "https://images.unsplash.com/photo-1729697811913-9256726e29f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxkZXNlcnQlMjBhcmNoaXRlY3R1cmV8ZW58MHx8fHwxNzcxNzc2MjQ0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "desert architecture"
+    },
+    {
+      "id": "project-6",
+      "description": "Brutalist Interior",
+      "imageUrl": "https://images.unsplash.com/photo-1511443125380-a911ff773008?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxicnV0YWxpc3QlMjBpbnRlcmlvcnxlbnwwfHx8fDE3NzE4MzA2NzZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "brutalist interior"
+    }
+  ]
 }
