@@ -7,10 +7,6 @@ import { PlaceHolderImages } from "@/lib/placeholder-images"
 const projects = [
   { id: "1", title: "A Quiet Corner in Warm Sunlight", category: "Architecture", imageId: "project-1" },
   { id: "2", title: "A Warm Everyday Kitchen", category: "Interior", imageId: "project-2" },
-  { id: "3", title: "Urban Monolith", category: "Conceptual", imageId: "project-3" },
-  { id: "4", title: "Glass Sanctuary", category: "Residential", imageId: "project-4" },
-  { id: "5", title: "Desert Oasis", category: "Commercial", imageId: "project-5" },
-  { id: "6", title: "Brutalist Study", category: "Conceptual", imageId: "project-6" },
 ]
 
 export function ProjectsGrid() {
@@ -24,7 +20,7 @@ export function ProjectsGrid() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16">
           {projects.map((project) => {
             const imageData = PlaceHolderImages.find(img => img.id === project.imageId)
             return (
@@ -52,12 +48,6 @@ export function ProjectsGrid() {
               </Link>
             )
           })}
-        </div>
-        
-        <div className="mt-24 text-center">
-          <Link href="/projects" className="inline-block py-4 px-12 border border-white/10 hover:border-primary hover:text-primary transition-all text-sm uppercase tracking-[0.2em]">
-            View All Projects
-          </Link>
         </div>
       </div>
     </section>
