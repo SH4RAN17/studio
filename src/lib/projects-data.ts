@@ -28,7 +28,7 @@ export const projectsData: Project[] = [
     description: "Shadow Play explores the transient nature of light within a residential setting. Through carefully calculated slatted screens and clerestory windows, the interior becomes a canvas for the sun's daily trajectory.",
     mainImageId: "project-2",
     services: ["Interior Rendering", "Lighting Design"],
-    galleryImageIds: ["project-2", "project-2_2", "project-2_3"]
+    galleryImageIds: ["project-2", "project-2_1", "project-2_2"]
   },
   {
     id: "3",

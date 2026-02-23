@@ -31,14 +31,20 @@
       "imageHint": "kitchen render"
     },
     {
-      "id": "project-2_2",
+      "id": "project-2_1",
       "description": "Project 2 Detail 1",
+      "imageUrl": "/project-2_1.jpg",
+      "imageHint": "kitchen detail"
+    },
+    {
+      "id": "project-2_2",
+      "description": "Project 2 Detail 2",
       "imageUrl": "/project-2_2.jpg",
       "imageHint": "kitchen detail"
     },
     {
       "id": "project-2_3",
-      "description": "Project 2 Detail 2",
+      "description": "Project 2 Detail 3",
       "imageUrl": "/project-2_3.jpg",
       "imageHint": "kitchen lighting"
     },
