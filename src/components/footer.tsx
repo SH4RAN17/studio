@@ -19,7 +19,6 @@ export function Footer() {
               <Link href="#" className="hover:text-primary transition-colors">Instagram</Link>
               <Link href="#" className="hover:text-primary transition-colors">Behance</Link>
               <Link href="#" className="hover:text-primary transition-colors">LinkedIn</Link>
-             </div>
             </div>
           </div>
         </div>
