@@ -18,7 +18,9 @@ export function Footer() {
             <div className="flex justify-center md:justify-end gap-6 text-sm uppercase tracking-widest">
               <Link href="#" className="hover:text-primary transition-colors">Instagram</Link>
               <Link href="#" className="hover:text-primary transition-colors">Behance</Link>
-              <Link href="#" className="hover:text-primary transition-colors">LinkedIn</Link>
+              <Link href="#" className="hover:text-primary transition-colors">LinkedIn</www.linkedin.com/in/
+sharanbelel17
+>
             </div>
           </div>
         </div>
