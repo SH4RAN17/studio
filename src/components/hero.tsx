@@ -22,7 +22,7 @@ export function Hero() {
         </h1>
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-8 mt-12 border-t border-white/10 pt-8">
           <p className="max-w-md text-secondary text-lg">
-            Transcending spatial boundaries through minimal aesthetics and poetic materiality.
+            Crafting visionary solutions, beyond the render.
           </p>
           <div className="flex gap-4">
             <div className="h-12 w-12 border border-white/20 flex items-center justify-center rounded-full hover:border-primary transition-colors cursor-pointer group">
