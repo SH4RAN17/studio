@@ -6,6 +6,12 @@ import Link from "next/link"
 export default function ResumePage() {
   const sections = [
     {
+      title: "Experience",
+      items: [
+        { role: "Intern Architectural Visualizer", company: "Hyperloop Group", period: "March 2026 — Present", desc: "Assisting architects with design visualization." },
+      ]
+    },
+    {
       title: "Education",
       items: [
         { role: "B.Sc. Animation & VFX", company: "Thakur College of Science & Commerce (Kandivali E)", period: "2025 - 2028", desc: "Interdisciplinary design studies with a minor in digital media." },
