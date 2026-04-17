@@ -8,7 +8,7 @@ export default function ResumePage() {
     {
       title: "Experience",
       items: [
-        { role: "Intern Architectural Visualizer", company: "Hyperloop Group", period: "March 2026 — Present", desc: "Assisting architects with design visualization." },
+        { role: "Architectural Visualizer", company: "Freelancer", period: "March 2026 — Present", desc: "Assisting architects with design visualization." },
       ]
     },
     {
