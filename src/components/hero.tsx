@@ -16,7 +16,7 @@ export function Hero() {
       </div>
 
       <div className="relative z-10 w-full max-w-7xl animate-fade-in-up">
-        <span className="text-primary uppercase tracking-[0.3em] text-sm mb-4 block">3D Artist</span>
+        <span className="text-primary uppercase tracking-[0.3em] text-sm mb-4 block">Architectural Visualizer | 3D Artist</span>
         <h1 className="font-headline text-[clamp(64px,12vw,140px)] leading-[0.9] mb-8">
           Sharan Belel
         </h1>
