@@ -76,8 +76,8 @@ export function ProjectDetail({ project }: { project: Project }) {
           <div className="lg:col-span-4">
             <div className="space-y-12 sticky top-32">
               <div>
-                <p className="text-secondary text-xs uppercase tracking-widest mb-4">Year</p>
-                <p className="text-xl">{project.Softwares Used}</p>
+                <p className="text-secondary text-xs uppercase tracking-widest mb-4">Softwares Used</p>
+                <p className="text-xl">{project.SoftwaresUsed}</p>
               </div>
               {/* Services section removed as requested */}
             </div>
