@@ -24,9 +24,7 @@ export function Footer() {
         </div>
         
         <div className="flex flex-col md:flex-row justify-between w-full pt-8 border-t border-white/5 text-[10px] text-secondary uppercase tracking-[0.3em]">
-          <p>© 2024 Sharan Belel Portfolio</p>
-          <p>Privacy Policy / Terms of Service</p>
-        </div>
+         </div>
       </div>
     </footer>
   )
