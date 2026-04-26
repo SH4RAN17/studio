@@ -117,7 +117,7 @@ export default function ResumePage() {
           </div>
      <div>              
        
- <section id="contact" className="mt-48 pt-24 border-t border-white/5">
+<section id="contact" className="mt-48 pt-24 border-t border-white/5">
   <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
 
     <div>
