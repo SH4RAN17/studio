@@ -115,7 +115,11 @@ export default function ResumePage() {
               </div>
             </div>
           </div>
-     <div>                <h2 className="font-headline text-4xl mb-8">Let&apos;s talk about your next vision.</h2>                <p className="text-secondary text-lg mb-12 uppercase tracking-widest">OPEN FOR COLLABORATIONS</p>                <a href="https://wa.me/8828691247?text=Hi%20I%20saw%20your%20portfolio" className="inline-block py-4 px-12 bg-primary text-primary-foreground hover:bg-primary/90 transition-all font-medium uppercase tracking-widest text-sm">                <a href="https://wa.me/+918828691247?text=Hi%20I%20saw%20your%20portfolio" className="inline-block py-4 px-12 bg-primary text-primary-foreground hover:bg-primary/90 transition-all font-medium uppercase tracking-widest text-sm">                  Send Message                </a>              </div>
+     <div>              
+       
+       <h2 className="font-headline text-4xl mb-8">Let&apos;s talk about your next vision.</h2>   
+    <p className="text-secondary text-lg mb-12 uppercase tracking-widest">OPEN FOR COLLABORATIONS</p>           
+<a href="https://wa.me/+918828691247?text=Hi%20I%20saw%20your%20portfolio" className="inline-block py-4 px-12 bg-primary text-primary-foreground hover:bg-primary/90 transition-all font-medium uppercase tracking-widest text-sm">                <a href="https://wa.me/+918828691247?text=Hi%20I%20saw%20your%20portfolio" className="inline-block py-4 px-12 bg-primary text-primary-foreground hover:bg-primary/90 transition-all font-medium uppercase tracking-widest text-sm">                  Send Message                </a>              </div>
    
       
       <Footer />
