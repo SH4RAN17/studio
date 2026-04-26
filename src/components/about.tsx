@@ -11,10 +11,11 @@ export function About() {
         <div className="lg:col-span-7 flex flex-col justify-end">
           <div className="max-w-xl ml-auto">
             <p className="text-xl md:text-2xl text-foreground leading-relaxed mb-8">
-              I am a passionate and detail-oriented 3D artist currently pursuing a degree in Animation and VFX, with a strong emphasis on architectural visualization.
+            I’m Sharan, a 3D archviz artist creating visuals that make projects clear, real and convincing.
             </p>
             <p className="text-lg text-secondary leading-relaxed">
-              My area of specialization is in realistic interior and exterior 3D rendering using industry standard software such as Autodesk 3ds Max, Maya and Corona, Vray Renderer. My work is centered on accurate scale, lighting, material, and composition. I am very interested in learning how real-world design translates into digital spaces and am constantly working on improving my skills through hands-on experience, analysis, and feedback. I am very keen into learning interior and exterior spaces in depth. I am dedicated to becoming a better visual storyteller and I can deliver high-quality, visually engaging 3D experiences for architectural, design, and media projects.
+I create photorealistic visuals helping architects and Real Estate developers present their projects with clarity, realism and impact. Every frame is crafted to communicate value instantly, hold attention, and move projects forward faster.
+Strong visuals don’t just represent architecture, they influence decisions and make people believe in the project before it exists.
             </p>
             <div className="mt-12 flex flex-wrap gap-x-12 gap-y-4 text-sm uppercase tracking-widest text-primary font-medium">
               <span>Archviz</span>
