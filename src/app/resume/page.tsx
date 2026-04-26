@@ -21,23 +21,22 @@ export default function ResumePage() {
 
   const tools = [
     { name: "3DS Max", level: "intermediate" },
-    { name: "Corona/Vray", level: "intermediate/beginner" },
+    { name: "Corona", level: "intermediate" },
+    { name: "D5 Render", level: "intermediate" },
     { name: "Photoshop", level: "intermediate" },
     { name: "After Effects", level: "intermediate" },
     { name: "Premiere Pro", level: "intermediate" },
     { name: "Maya", level: "beginner" },
-    { name: "D5 Render", level: "Beginner" },
-    { name: "Unreal Engine", level: "Beginner" },
   ]
 
   const skills = [
-    "3D Modelling",
-    "Communication Skills",
-    "Lighting",
-    "Visual StoryTelling",
-    "Photorealistic Rendering",
-    "Attention to Detail",
-    "Spatial Planning",
+    "Photorealistic Interior & Exterior Rendering",
+    "Camera Composition & Cinematic Framing",
+    "Post-Production",
+    "Advanced Material & Texture",
+    "Atmospheric Depth & Mood Crafting",
+    "Consistency Across Views",
+    "Client-Focused Visualization",
     "Creative Thinking"
   ]
 
@@ -122,7 +121,7 @@ export default function ResumePage() {
               <div>
                 <h2 className="font-headline text-4xl mb-8">Let&apos;s talk about your next vision.</h2>
                 <p className="text-secondary text-lg mb-12 uppercase tracking-widest">OPEN FOR COLLABORATIONS</p>
-                <a href="mailto:belelsharan17@gmail.com" className="inline-block py-4 px-12 bg-primary text-primary-foreground hover:bg-primary/90 transition-all font-medium uppercase tracking-widest text-sm">
+                <a href="https://wa.me/8828691247?text=Hi%20I%20saw%20your%20portfolio" className="inline-block py-4 px-12 bg-primary text-primary-foreground hover:bg-primary/90 transition-all font-medium uppercase tracking-widest text-sm">
                   Send Message
                 </a>
               </div>

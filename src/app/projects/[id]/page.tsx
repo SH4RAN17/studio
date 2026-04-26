@@ -1,4 +1,3 @@
-
 "use client"
 
 import * as React from "react"
@@ -10,24 +9,79 @@ import { ArrowLeft } from "lucide-react"
 import { useState } from "react"
 import { Dialog, DialogContent } from "@/components/ui/dialog"
 
-export default function ProjectPage({ params }: { params: Promise<{ id: string }> }) {
-  const { id } = React.use(params)
+export default function ProjectPage({ params }: any) {
+ const id = (React.use(params) as any).id
+  console.log("Project ID:", id)
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
   
   // Static data simulation
-  const project = {
-    title: "Minimal Concrete Pavilion",
-    category: "Architecture",
-    year: "2023",
-    location: "Stockholm, Sweden",
-    description: "A study in brutalist honesty, the Concrete Pavilion is designed as a sanctuary of silence. Using exposed board-formed concrete and deep overhangs, the structure manipulates natural light to create shifting atmospheres throughout the day.",
-    mainImage: "https://picsum.photos/seed/proj1/1920/1080",
+let project;
+
+if (String(id) === "1") {
+  project = {
+    title: "A Quiet Corner in Warm Sunlight",
+    category: "Living Room",
+   software: [
+  "3DS Max",
+  "Corona Renderer",
+],
+    location: "Interior",
+    description: "A calm and cozy living room visualization focusing on warm sunlight and minimal design.",
+    mainImage: "/project-1.jpg",
     gallery: [
-      "https://picsum.photos/seed/gallery1/800/1000",
-      "https://picsum.photos/seed/gallery2/800/1000",
-      "https://picsum.photos/seed/gallery3/1200/800",
+      "/project-1.jpg",
+      "/project-1_2.jpg",
+      "/project-1_3.jpg"
     ]
   }
+}
+
+else if (String(id) === "2") {
+  project = {
+    title: "A Warm Everyday Kitchen",
+    category: "Kitchen",
+    software: [
+  "3DS Max",
+  "Corona Renderer",
+],
+    location: "Interior",
+    description: "A modern kitchen designed with warmth, natural materials and soft lighting.",
+    mainImage: "/project-2.jpg",
+    gallery: [
+      "/project-2.jpg",
+      "/project-2_1.jpg",
+      "/project-2_2.jpg"
+    ]
+  }
+}
+
+else if (String(id) === "3") {
+  project = {
+    title: "Residential High-Rise Redevelopment Project",
+    category: "Exterior",
+   software: [
+  "3DS Max",
+  "D5 Render",
+  "Photoshop",
+],
+    location: "Nerul",
+    description: "This a CHS Redevelopment project and  is envisioned as a contemporary residential high-rise that redefines urban living in Navi Mumbai.The project aims to replace an existing housing society with a modern, efficient, and visually dynamic structure.The design focuses on maximizing views, natural light, and ventilation while creating a strong architectural identity within the evolving skyline. With a thoughtfully designed podium and residential tower, the project balances functionality with aesthetics, offering residents an enhanced living experience connected to its surrounding urban and natural context.",
+    mainImage: "/project-2.jpg",
+    gallery: [
+      "/project-2.jpg",
+      "/project-2_1.jpg",
+      "/project-2_2.jpg"
+    ]
+  }
+}
+
+if (!project) {
+  return <div>Project not found</div>
+}
+
+if (!project) {
+  return <div>Project not found</div>
+}
 
   return (
     <main className="min-h-screen bg-background">
@@ -84,14 +138,33 @@ export default function ProjectPage({ params }: { params: Promise<{ id: string }
           <div className="lg:col-span-4">
             <div className="space-y-12 sticky top-32">
               <div>
-                <p className="text-secondary text-xs uppercase tracking-widest mb-4">Year</p>
-                <p className="text-xl">{project.year}</p>
-              </div>
+  <p className="text-secondary text-base md:text-lg uppercase tracking-widest mb-4 font-serif">
+    Software Used
+  </p>
+
+  {project.software?.length > 0 && (
+    <div className="space-y-4 text-xl">
+      {project.software.map((tool: string, i: number) => (
+        <div key={i}>
+          <p className="font-serif" style={{ color: "#D6BFA3" }}>
+            {tool}
+          </p>
+
+          {i !== project.software.length - 1 && (
+            <div className="border-b border-white/10 mt-4"></div>
+          )}
+        </div>
+      ))}
+    </div>
+  )}
+</div>
               {/* Services section removed as requested */}
             </div>
           </div>
           <div className="lg:col-span-8">
-            <h2 className="text-secondary text-xs uppercase tracking-widest mb-8">About the project</h2>
+           <h2 className="text-secondary text-lg md:text-xl uppercase tracking-widest mb-8">
+  About the project
+</h2>
             <p className="text-lg leading-relaxed mb-16 text-secondary max-w-3xl">
               {project.description}
             </p>
