@@ -5,7 +5,7 @@ export function About() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16">
         <div className="lg:col-span-5">
           <h2 className="font-headline text-5xl md:text-7xl leading-tight text-left">
-            Crafting <span className="text-primary italic">Atmospheres</span> Not Just Structures.
+            Spaces That <span className="text-primary italic">Breathe</span>Before They're Built.
           </h2>
         </div>
         <div className="lg:col-span-7 flex flex-col justify-end">
