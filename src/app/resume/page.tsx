@@ -115,34 +115,8 @@ export default function ResumePage() {
               </div>
             </div>
           </div>
-
-          <section id="contact" className="mt-48 pt-24 border-t border-white/5">
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
-
-    <div>
-      <h2 className="font-headline text-4xl mb-8">
-        Let&apos;s talk about your next vision.
-      </h2>
-
-      <p className="text-secondary text-lg mb-12 uppercase tracking-widest">
-        OPEN FOR COLLABORATIONS
-      </p>
-
-      <a
-        href="https://wa.me/+918828691247?text=Hi%20I%20saw%20your%20portfolio"
-        className="inline-block py-4 px-12 bg-primary text-primary-foreground"
-      >
-        Send Message
-      </a>
-    </div>
-
-    <div className="flex flex-col justify-end space-y-4 text-secondary uppercase tracking-[0.2em] text-sm">
-      <p>Mumbai</p>
-      <p>+91 8828691247</p>
-    </div>
-
-  </div>
-</section>
+     <div>                <h2 className="font-headline text-4xl mb-8">Let&apos;s talk about your next vision.</h2>                <p className="text-secondary text-lg mb-12 uppercase tracking-widest">OPEN FOR COLLABORATIONS</p>                <a href="https://wa.me/8828691247?text=Hi%20I%20saw%20your%20portfolio" className="inline-block py-4 px-12 bg-primary text-primary-foreground hover:bg-primary/90 transition-all font-medium uppercase tracking-widest text-sm">                <a href="https://wa.me/+918828691247?text=Hi%20I%20saw%20your%20portfolio" className="inline-block py-4 px-12 bg-primary text-primary-foreground hover:bg-primary/90 transition-all font-medium uppercase tracking-widest text-sm">                  Send Message                </a>              </div>
+   
       
       <Footer />
     </main>
