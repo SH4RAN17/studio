@@ -114,7 +114,8 @@ if (!project) {
             alt={project.title}
             fill
             className="object-cover"
-            priority
+              quality={100}
+  unoptimized
             data-ai-hint="minimal architecture"
           />
           <div className="absolute inset-0 bg-black/40" />
