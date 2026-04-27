@@ -28,7 +28,7 @@ export function Navigation() {
         <Link href="/#about" className="hover:text-primary transition-colors">About</Link>
         <Link href="/#projects" className="hover:text-primary transition-colors">Projects</Link>
         <Link href="/resume" className="hover:text-primary transition-colors">Resume</Link>
-        <Link href="/#contact" className="px-4 py-2 border border-white/20 hover:border-primary hover:text-primary transition-all">Contact</Link>
+        <Link href="/resume#contact" className="px-4 py-2 border border-white/20 hover:border-primary hover:text-primary transition-all">Contact</Link>
       </div>
     </nav>
   )

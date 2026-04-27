@@ -116,7 +116,8 @@ export default function ResumePage() {
             </div>
           </div>
 
-          <div className="mt-48 pt-24 border-t border-white/5">
+          <div 
+           id="contact" className="mt-48 pt-24 border-t border-white/5 scroll-mt-38">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
               <div>
                 <h2 className="font-headline text-4xl mb-8">Let&apos;s talk about your next vision.</h2>
