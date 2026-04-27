@@ -66,11 +66,11 @@ else if (String(id) === "3") {
 ],
     location: "Nerul",
     description: "This a CHS Redevelopment project and  is envisioned as a contemporary residential high-rise that redefines urban living in Navi Mumbai.The project aims to replace an existing housing society with a modern, efficient, and visually dynamic structure.The design focuses on maximizing views, natural light, and ventilation while creating a strong architectural identity within the evolving skyline. With a thoughtfully designed podium and residential tower, the project balances functionality with aesthetics, offering residents an enhanced living experience connected to its surrounding urban and natural context.",
-    mainImage: "/KANHERI SUNSET CLOSEUP.jpg",
+    mainImage: "/KANHERI SUNSET CLOSEUP.webp",
     gallery: [
-      "/KANHERI DAY.jpg",
-      "/KANHERI SUNSET.jpg",
-      "/KANHERI SUNSET CLOSEUP.jpg"
+      "/KANHERI DAY.webp",
+      "/KANHERI SUNSET.webp",
+      "/KANHERI SUNSET CLOSEUP.webp"
     ]
   }
 }
