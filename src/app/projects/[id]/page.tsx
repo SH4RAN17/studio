@@ -37,7 +37,7 @@ if (String(id) === "1") {
 }
 
 else if (String(id) === "2") {
-  project = {
+  project = {run
     title: "A Warm Everyday Kitchen",
     category: "Kitchen",
     software: [
@@ -71,6 +71,28 @@ else if (String(id) === "3") {
       "/KANHERI DAY.webp",
       "/KANHERI SUNSET.webp",
       "/KANHERI SUNSET CLOSEUP.webp"
+    ]
+  }
+}
+
+else if (String(id) === "4") {
+  project = {
+    title: "Residential High-Rise Redevelopment Project",
+    category: "Exterior",
+   software: [
+  "3DS Max",
+  "D5 Render",
+  "Photoshop",
+],
+    location: "Sanpada",
+    description: "This redevelopment project is envisioned as a contemporary residential high-rise that redefines urban living in Navi Mumbai. Located in Sanpada, Navi Mumbai. the project aims to transform a conventional residential site into a modern, efficient, and visually dynamic landmark.The twin-tower composition is centered on maximizing views, natural light, and ventilation through a split-massing approach. With an active ground plane and a sculptural base that contrasts the rigid towers above, the project balances high-density functionality with an enhanced user experience connected to its surrounding urban context." ,
+    mainImage: "/SANPADAClOSEUP.png",
+    gallery: [
+      "/SANPADAFRONT.png",
+      "/SANPADAClOSEUP.png",
+      "/SANPADAAERIAL.png",
+
+      
     ]
   }
 }

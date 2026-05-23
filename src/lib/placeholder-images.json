@@ -52,14 +52,8 @@
   {
   "id": "project-4",
   "description": "Nerul Main",
-  "imageUrl": "/project-2_1.jpg",
+  "imageUrl": "/SANPADAClOSEUP.png",
   "imageHint": "exterior building"
-},
-{
-  "id": "project-4_2",
-  "description": "Nerul Detail 1",
-  "imageUrl": "/project-2_.jpg",
-  "imageHint": "building detail"
 }
   ]
 }
