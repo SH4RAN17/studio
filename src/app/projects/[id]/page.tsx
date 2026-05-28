@@ -27,30 +27,31 @@ if (String(id) === "1") {
 ],
     location: "Interior",
     description: "A calm and cozy living room visualization focusing on warm sunlight and minimal design.",
-    mainImage: "/project-1.jpg",
+    mainImage: "/Stills/project-1.jpg",
     gallery: [
-      "/project-1.jpg",
-      "/project-1_2.jpg",
-      "/project-1_3.jpg"
+      "/Stills/project-1.jpg",
+      "/Stills/project-1_2.jpg",
+      "/Stills/project-1_3.jpg"
     ]
   }
 }
 
 else if (String(id) === "2") {
   project = {
-    title: "A Warm Everyday Kitchen",
-    category: "Kitchen",
+    title: "A Home Softened by Light",
+    category: "Bedroom",
     software: [
   "3DS Max",
   "Corona Renderer",
+  "AI For Human Integration",
 ],
-    location: "Interior",
-    description: "A modern kitchen designed with warmth, natural materials and soft lighting.",
-    mainImage: "/project-2.jpg",
+    location: "Bedroom",
+    description: "Inspired by cozy Russian style interiors, this bedroom visualization emphasizes soft daylight, layered fabrics, and handcrafted decorative details. The scene was developed to evoke a relaxed morning ambience with cinematic lighting and tactile material realism.To make the scene feel more emotionally connected and alive, AI-assisted human integration was used carefully to introduce a gentle storytelling element without disturbing the original mood and lighting of the render.",
+    mainImage: "/Stills/project2.webp",
     gallery: [
-      "/project-2.jpg",
-      "/project-2_1.jpg",
-      "/project-2_2.jpg"
+      "/Stills/project2.1.webp",
+      "/Stills/project2.2.webp",
+      "/Stills/project2.3.webp"
     ]
   }
 }
@@ -66,11 +67,11 @@ else if (String(id) === "3") {
 ],
     location: "Nerul",
     description: "This a CHS Redevelopment project and  is envisioned as a contemporary residential high-rise that redefines urban living in Navi Mumbai.The project aims to replace an existing housing society with a modern, efficient, and visually dynamic structure.The design focuses on maximizing views, natural light, and ventilation while creating a strong architectural identity within the evolving skyline. With a thoughtfully designed podium and residential tower, the project balances functionality with aesthetics, offering residents an enhanced living experience connected to its surrounding urban and natural context.",
-    mainImage: "/KANHERI SUNSET CLOSEUP.webp",
+    mainImage: "/Stills/KANHERI SUNSET CLOSEUP.webp",
     gallery: [
-      "/KANHERI DAY.webp",
-      "/KANHERI SUNSET.webp",
-      "/KANHERI SUNSET CLOSEUP.webp"
+      "/Stills/KANHERI DAY.webp",
+      "/Stills/KANHERI SUNSET.webp",
+      "/Stills/KANHERI SUNSET CLOSEUP.webp"
     ]
   }
 }
@@ -86,11 +87,10 @@ else if (String(id) === "4") {
 ],
     location: "Sanpada",
     description: "This redevelopment project is envisioned as a contemporary residential high-rise that redefines urban living in Navi Mumbai. Located in Sanpada, Navi Mumbai. the project aims to transform a conventional residential site into a modern, efficient, and visually dynamic landmark.The twin-tower composition is centered on maximizing views, natural light, and ventilation through a split-massing approach. With an active ground plane and a sculptural base that contrasts the rigid towers above, the project balances high-density functionality with an enhanced user experience connected to its surrounding urban context." ,
-    mainImage: "/SANPADAClOSEUP.webp",
+    mainImage: "/Stills/SANPADAClOSEUP.webp",
     gallery: [
-      "/SANPADAFRONT.webp",
-      "/SANPADAClOSEUP.webp",
-      "/SANPADAAERIAL.webp",
+      "/Stills/SANPADAFRONT.webp",
+      "/Stills/SANPADAClOSEUP.webp",
 
       
     ]

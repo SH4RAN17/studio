@@ -3,56 +3,56 @@
     {
       "id": "hero-bg",
       "description": "User custom kitchen render in public folder",
-      "imageUrl": "/hero.jpg",
+      "imageUrl": "/Stills/hero.jpg",
       "imageHint": "kitchen interior"
     },
     {
       "id": "project-1",
       "description": "Project 1 Main",
-      "imageUrl": "/project-1.jpg",
+      "imageUrl": "/Stills/project-1.jpg",
       "imageHint": "minimalist interior"
     },
     {
       "id": "project-1_2",
       "description": "Project 1 Detail 1",
-      "imageUrl": "/project-1_2.jpg",
+      "imageUrl": "/Stills/project-1_2.jpg",
       "imageHint": "interior detail"
     },
     {
       "id": "project-1_3",
       "description": "Project 1 Detail 2",
-      "imageUrl": "/project-1_3.jpg",
+      "imageUrl": "/Stills/project-1_3.jpg",
       "imageHint": "interior lighting"
     },
     {
       "id": "project-2",
       "description": "Project 2 Main",
-      "imageUrl": "/project-2.jpg",
+      "imageUrl": "/Stills/project2.webp",
       "imageHint": "kitchen render"
     },
     {
       "id": "project-2_1",
       "description": "Project 2 Detail 1",
-      "imageUrl": "/project-2_1.jpg",
+      "imageUrl": "/Stills/project2.1.webp",
       "imageHint": "kitchen detail"
     },
     {
       "id": "project-2_2",
       "description": "Project 2 Detail 2",
-      "imageUrl": "/project-2_2.jpg",
+      "imageUrl": "/Stills/project-2_2.jpg",
       "imageHint": "kitchen detail"
     },
     {
       "id": "project-3",
       "description": "Project 3 Main",
-      "imageUrl": "/KANHERI SUNSET CLOSEUP.webp",
+      "imageUrl": "/Stills/KANHERI SUNSET CLOSEUP.webp",
       "imageHint": "KANHERI"
     },
    
   {
   "id": "project-4",
   "description": "Nerul Main",
-  "imageUrl": "/SANPADAClOSEUP.webp",
+  "imageUrl": "/Stills/SANPADAClOSEUP.webp",
   "imageHint": "exterior building"
 }
   ]
