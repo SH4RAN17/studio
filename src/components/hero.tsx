@@ -5,7 +5,7 @@ export function Hero() {
     <section className="relative h-screen w-full overflow-hidden flex items-end px-8 md:px-16 pb-24">
       <div className="absolute inset-0 z-0">
         <Image
-          src="/hero.jpg"
+          src="/Stills/hero.jpg"
           alt="Sharan Belel Portfolio"
           fill
           className="object-cover"

@@ -9,10 +9,12 @@ import { ArrowLeft } from "lucide-react"
 import { Project } from "@/lib/projects-data"
 import { PlaceHolderImages } from "@/lib/placeholder-images"
 import { useState } from "react"
-import { Dialog, DialogContent } from "@/components/ui/dialog"
+import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog"
+import { PanoramaViewer } from "@/components/panorama-viewer"
 
 export function ProjectDetail({ project }: { project: Project }) {
-  const [selectedImage, setSelectedImage] = useState<string | null>(null)
+ const [selectedImage, setSelectedImage] = useState<string | null>(null)
+const [open360, setOpen360] = useState(false)
   
   const mainImage = PlaceHolderImages.find(img => img.id === project.mainImageId)?.imageUrl || "https://picsum.photos/seed/main/1920/1080"
   
@@ -22,25 +24,38 @@ export function ProjectDetail({ project }: { project: Project }) {
   }).slice(0, project.id === "3" ? 2 : undefined)
 
   return (
-    <main className="min-h-screen bg-background">
+    <><main className="min-h-screen bg-background">
       <Navigation />
-      
+
       {/* Fullscreen Image Dialog */}
-      <Dialog open={!!selectedImage} onOpenChange={(open) => !open && setSelectedImage(null)}>
+      <Dialog
+        open={!!selectedImage}
+        onOpenChange={() => setSelectedImage(null)}
+      >
         <DialogContent className="max-w-[95vw] w-full max-h-[95vh] h-full p-0 bg-black/90 border-none overflow-hidden sm:rounded-none">
+          <DialogTitle className="sr-only">Full size visualization</DialogTitle>
           <div className="relative w-full h-full flex items-center justify-center p-4">
             {selectedImage && (
               <div className="relative w-full h-full">
-                <Image 
-                  src={selectedImage} 
-                  alt="Full size visualization" 
-                  fill 
-                  className="object-contain" 
-                  priority
-                />
+                <Image
+                  src={selectedImage}
+                  alt="Full size visualization"
+                  fill
+                  className="object-contain"
+                  priority />
               </div>
             )}
           </div>
+        </DialogContent>
+      </Dialog>
+
+      <Dialog
+        open={open360}
+        onOpenChange={setOpen360}
+      >
+        <DialogContent className="max-w-[100vw] w-full h-[100vh] p-0 bg-black border-none sm:rounded-none">
+          <DialogTitle className="sr-only">360 panorama viewer</DialogTitle>
+          <PanoramaViewer />
         </DialogContent>
       </Dialog>
 
@@ -53,11 +68,10 @@ export function ProjectDetail({ project }: { project: Project }) {
             fill
             className="object-cover"
             priority
-            data-ai-hint="architecture render"
-          />
+            data-ai-hint="architecture render" />
           <div className="absolute inset-0 bg-black/40" />
         </div>
-        
+
         <div className="relative z-10 w-full max-w-7xl pointer-events-none">
           <div className="pointer-events-auto">
             <Link href="/#projects" className="flex items-center gap-2 text-sm uppercase tracking-widest text-white/60 hover:text-primary transition-colors mb-12 w-fit">
@@ -77,40 +91,64 @@ export function ProjectDetail({ project }: { project: Project }) {
             <div className="space-y-12 sticky top-32">
               <div>
                 <p className="text-secondary text-xs uppercase tracking-widest mb-4">Softwares Used</p>
-                <p className="text-xl">{project.SoftwaresUsed}</p>
+                <p className="text-xl">{project.services.join(", ")}</p>
               </div>
               {/* Services section removed as requested */}
             </div>
           </div>
           <div className="lg:col-span-8">
-            <h2 className="text-secondary text-xs uppercase tracking-widest mb-8">About the project</h2>
+           <h2 className="text-red-500 text-5xl">
+  TEST TEST TEST
+</h2>
             <p className="text-sm md:text-base leading-relaxed mb-16 text-secondary max-w-3xl">
               {project.description}
             </p>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {galleryImages.map((img, i) => (
-                <div 
-                  key={i} 
+                <div
+                  key={i}
                   className="relative aspect-[4/5] bg-card overflow-hidden cursor-zoom-in group"
                   onClick={() => setSelectedImage(img)}
                 >
-                  <Image 
-                    src={img} 
-                    alt={`${project.title} detail ${i}`} 
-                    fill 
-                    className="object-cover transition-slow group-hover:scale-105" 
-                    data-ai-hint="architecture detail" 
-                  />
+                  <Image
+                    src={img}
+                    alt={`${project.title} detail ${i}`}
+                    fill
+                    className="object-cover transition-slow group-hover:scale-105" />
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors" />
                 </div>
               ))}
             </div>
+
+            <div className="mt-20">
+              <h2 className="text-secondary text-xs uppercase tracking-widest mb-8">
+                360 Degree Experience
+              </h2>
+
+              <div
+                onClick={() => setOpen360(true)}
+                className="relative cursor-pointer overflow-hidden group"
+              >
+                <Image
+                  src="/panoramas/360.jpg"
+                  alt="360 Preview"
+                  width={1600}
+                  height={900}
+                  className="w-full object-cover transition duration-500 group-hover:scale-105" />
+
+                <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+                  <div className="border border-white px-6 py-3 text-white tracking-[0.2em] uppercase">
+                    View 360°
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      
       <Footer />
     </main>
+    </>
   )
 }

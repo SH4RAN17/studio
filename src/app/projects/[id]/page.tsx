@@ -7,12 +7,14 @@ import Image from "next/image"
 import Link from "next/link"
 import { ArrowLeft } from "lucide-react"
 import { useState } from "react"
-import { Dialog, DialogContent } from "@/components/ui/dialog"
+import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog"
+import { PanoramaViewer } from "@/components/panorama-viewer"
 
 export default function ProjectPage({ params }: any) {
  const id = (React.use(params) as any).id
   console.log("Project ID:", id)
-  const [selectedImage, setSelectedImage] = useState<string | null>(null)
+ const [selectedImage, setSelectedImage] = useState<string | null>(null)
+const [open360, setOpen360] = useState(false)
   
   // Static data simulation
 let project;
@@ -112,6 +114,7 @@ if (!project) {
       {/* Fullscreen Image Dialog */}
       <Dialog open={!!selectedImage} onOpenChange={(open) => !open && setSelectedImage(null)}>
         <DialogContent className="max-w-[95vw] w-full max-h-[95vh] h-full p-0 bg-black/90 border-none overflow-hidden sm:rounded-none">
+          <DialogTitle className="sr-only">Full size visualization</DialogTitle>
           <div className="relative w-full h-full flex items-center justify-center p-4">
             {selectedImage && (
               <div className="relative w-full h-full">
@@ -128,6 +131,18 @@ if (!project) {
         </DialogContent>
       </Dialog>
       
+      
+ 
+<Dialog
+  open={open360}
+  onOpenChange={setOpen360}
+>
+  <DialogContent className="max-w-[100vw] w-full h-[100vh] p-0 bg-black border-none sm:rounded-none">
+    <DialogTitle className="sr-only">360 panorama viewer</DialogTitle>
+    <PanoramaViewer />
+  </DialogContent>
+</Dialog>
+
       {/* Hero Section - Lightbox functionality removed as requested */}
       <section className="relative h-screen w-full flex items-center px-8 md:px-16">
         <div className="absolute inset-0 z-0">
@@ -207,9 +222,37 @@ if (!project) {
                     data-ai-hint="architecture detail" 
                   />
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors" />
+
+                 
                 </div>
               ))}
             </div>
+            {String(id) === "2" && (
+  <div className="mt-20">
+    <h2 className="text-secondary text-lg md:text-xl uppercase tracking-widest mb-8">
+      360 Degree Experience
+    </h2>
+
+    <div
+      onClick={() => setOpen360(true)}
+      className="relative cursor-pointer overflow-hidden group"
+    >
+      <Image
+        src="/panoramas/360.jpg"
+        alt="360 Preview"
+        width={1600}
+        height={900}
+        className="w-full object-cover"
+      />
+
+      <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+        <div className="border border-white px-6 py-3 text-white uppercase">
+          View 360°
+        </div>
+      </div>
+    </div>
+  </div>
+)}
           </div>
         </div>
       </section>
