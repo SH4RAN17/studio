@@ -239,7 +239,7 @@ if (!project) {
       className="relative cursor-pointer overflow-hidden group"
     >
       <Image
-        src="/Bedroom.webp"
+        src="/panoramas/Bedroom.webp"
         alt="360 Preview"
         width={1600}
         height={900}
