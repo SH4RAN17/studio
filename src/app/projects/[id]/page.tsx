@@ -9,6 +9,7 @@ import { ArrowLeft } from "lucide-react"
 import { useState } from "react"
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog"
 import { PanoramaViewer } from "@/components/panorama-viewer"
+import { Analytics } from "@vercel/analytics/next"
 
 export default function ProjectPage({ params }: any) {
  const id = (React.use(params) as any).id
@@ -238,7 +239,7 @@ if (!project) {
       className="relative cursor-pointer overflow-hidden group"
     >
       <Image
-        src="/panoramas/360.jpg"
+        src="/Bedroom.webp"
         alt="360 Preview"
         width={1600}
         height={900}

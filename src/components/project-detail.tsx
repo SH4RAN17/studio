@@ -131,7 +131,7 @@ const [open360, setOpen360] = useState(false)
                 className="relative cursor-pointer overflow-hidden group"
               >
                 <Image
-                  src="/panoramas/360.jpg"
+                  src="/panoramas/Bedroom.webp"
                   alt="360 Preview"
                   width={1600}
                   height={900}
